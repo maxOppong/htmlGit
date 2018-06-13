@@ -2,5 +2,5 @@
 
 Branching, Merging & Pull Requests.
 
-Git Strategies
+Git Strategies...
 
