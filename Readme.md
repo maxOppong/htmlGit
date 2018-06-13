@@ -1,3 +1,6 @@
 # htmlGit
 
-Branching, Merging & Pull Requests
+Branching, Merging & Pull Requests.
+
+Git Strategies
+
