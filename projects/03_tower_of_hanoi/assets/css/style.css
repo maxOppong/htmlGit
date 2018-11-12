@@ -1,0 +1,110 @@
+
+/* ========== Special Classes ========== */
+.w-100 {
+  width: 100%;
+  margin: 20px 0;
+}
+.btn-100 {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+.show-inline {
+  display: inline;
+}
+.show-block {
+  display: block;
+}
+
+/* ========== Layout ========== */
+
+html, body, #main, .row {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid, .row {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Typography ========== */
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.head {
+  font-size: 1.3rem;
+  color: #FFC107;
+  padding-top: 15px;
+}
+
+/* ========== Background ========== */
+
+#preferences {
+
+  background-color: #708d9b ;/*#455A64 #1280B2;#03A9F4*/
+}
+
+#tower_of_hanoi {
+  background-color: #eff; /*#efefef;*/
+}
+
+/* ========== Index.html ========== */
+#preferences {
+  border-right: 1px solid black;
+}
+
+#pause-play {
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+#pause-play button {
+  border-color: #795548;
+}
+#pause-play .btn-outline-primary {
+  color: blue;
+}
+#pause-play .btn-outline-primary:hover {
+  border-color: blue;
+  background-color: inherit;
+}
+#pause-play .btn-outline-danger {
+  color: red;
+}
+#pause-play .btn-outline-danger:hover {
+  border-color: red;
+  background-color: inherit;
+}
+#errors {
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .7em;
+}
+#errors > * {
+  padding: 0;
+  margin: 0;
+}
+#errors > button {
+  font-size: 1em;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .row {
+    width: 768px;
+  }
+  .col-md-3 {
+    width: 192px;
+  }
+  .col-md-9 {
+    width: 576px;
+  }
+}

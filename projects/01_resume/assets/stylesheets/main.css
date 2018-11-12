@@ -1,0 +1,574 @@
+/*
+  ========================================
+  Table of Content
+  ========================================
+  - Base
+    - Grid
+    - Typography
+  - Components
+    - Navigation
+    - tables
+  - Modules
+    - Header
+    - Footer
+  - Homepage
+  - Cover Letter Page
+  - Portfolio Page
+
+*/
+
+
+/*
+  ========================================
+  BASE
+  ========================================
+*/
+
+body {
+  background: #2196F3;
+  color: #fff;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.outline{
+  display: none;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* ========== Grid ========== */
+
+.row {
+  min-width: 780px;
+  padding: 0 6%;
+}
+.col {
+  position: relative;
+  float: left;
+}
+.col-1 {
+    width: 8.3333333333%;
+}
+.col-2 {
+    width: 16.6666666666%;
+}
+.col-3 {
+    width: 24.9999999999%;
+}
+.col-4 {
+    width: 33.3333333332%;
+}
+.col-5 {
+    width: 41.6666666665%;
+}
+.col-6 {
+    width: 49.9999999998%;
+}
+.col-7 {
+    width: 58.3333333331%;
+}
+.col-8 {
+    width: 66.6666666664%;
+}
+.col-9 {
+    width: 74.9999999997%;
+}
+.col-10 {
+    width: 83.333333333%;
+}
+.col-11 {
+    width: 91.6666666663%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* ========== Typography ========== */
+
+
+
+
+/*
+  ========================================
+  COMPONENTS
+  ========================================
+*/
+
+/* ========== Navigation ========== */
+
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav li {
+  float: left;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+nav a {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  vertical-align: top;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* ========== Tables ========== */
+table {
+  width: 100%
+}
+th, td {
+  vertical-align: top;
+}
+th {
+  text-align: left;
+}
+
+/*
+  ========================================
+  MODULES
+  ========================================
+*/
+
+/* ========== Header ========== */
+h1 {
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 2em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#main-header {
+  background: #03A9F4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  box-shadow: -1px 5px 5px #494949;
+}
+#main-header img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+#main-header a:hover {
+  font-weight: 300;
+}
+#tagline {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  font-size: 18px;
+}
+
+/* ========== Footer ========== */
+
+#mainFooter .row:first-child {
+  background: #03A9F4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#mainFooter .row:last-child {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+#mainFooter .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2196F3;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#mainFooter .fa {
+  font-size: 25px;
+  display: inline-block;
+  margin-top: 12.5px; /* icon height / 2 */
+}
+#mainFooter .fa-facebook{
+   margin-left: 17.85px; /* middle of container - half of icon width */
+}
+#mainFooter .fa-twitter{
+   margin-left: 13.39px; /* middle of container - half of icon width */
+}
+#mainFooter .fa-github{
+   margin-left: 14.28px; /* middle of container - half of icon width */
+}
+#mainFooter p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#website {
+  float: right;
+}
+
+
+/*
+  ========================================
+  HOMEPAGE
+  ========================================
+*/
+
+/* ========== Main Header ========== */
+
+/* ========== Introduction ========== */
+#intro {
+  background: #757575;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+/* ========== Resume ========== */
+#resume {
+  background: #fff;
+  color: black;
+  padding-left: 6%;
+  padding-right: 0;
+  overflow: hidden;
+}
+#resume > .col-4, #resume > .col8 {
+  padding-bottom: 1000em;
+  margin-bottom: -1000em;
+}
+#resume > .col-4 {
+  padding-right: 3.6%;
+  box-shadow: 5px -1px 10px rgba(158,158,158,.4);
+  z-index: 1;
+}
+#resume > div:last-child {
+  padding-left: 3.6%;
+  padding-right: 6.38%;
+  font-size: 14px;
+  line-height:16px;
+  background: #f4f4f4;
+}
+.resume-container {
+  margin-top: 20px;
+}
+.resume-container:last-of-type {
+  margin-bottom: 30px;
+}
+.resume-container > h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(3,169,244, .8);
+}
+    /* ========== Resume - Section One ========== */
+
+    /***** Personal *****/
+#personal tr {
+  border-bottom: 1px solid #ccc;
+}
+#personal tr * {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#personal th {
+  text-align: left;
+  font-weight: 400;
+  width: 40%;
+}
+#personal td {
+  padding-left: 6.2%;
+}
+    /***** Programming Language *****/
+#skills th {
+  width: 40%;
+}
+#skills td {
+  padding-left: 6.2%;
+}
+#skills td > div  {
+  width: 100%;
+  height: 10px;
+  margin-top:6px;
+  background: #DCDCDC;
+}
+.skill-level {
+  height: 10px;
+  background: #03A9F4;
+}
+
+    /***** Hobby *****/
+.hobby {
+  width: 21%;
+  float: left;
+  margin-right: 18%;
+}
+.hobby:nth-of-type(3n) {
+  margin-right: 0;
+}
+.hobby-img {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 50%;
+  background: #BBDEFB;
+}
+.hobby-name {
+  font-size: 12px;
+  text-align: center;
+}
+
+    /* ========== Resume - Section Two ========== */
+
+        /***** Work & education *****/
+.blt {
+  width: 5.67%;  /* width calculates to 30px */
+  margin-right: 3.78%;
+  float: left;
+  position: relative;
+}
+#work .blt {
+  height: 212px;  /* used to google inspect tool to calculate*/
+}
+#education .blt {
+  height: 138px;  /* used to google inspect tool to calculate*/
+}
+.blt-line {
+  position: absolute;
+  left: 46.7%; /* calculates to 14px +the border = 15px */
+  border: 1px solid rgba(3,169,244, .4);
+  margin-top: 22.5px; /* inner-cirlce height + outer cicle padding-top */
+}
+#work .blt-line {
+  height: 189.5px;  /* parent height - margin-top */
+}
+#education .blt-line {
+  height: 115.5px;  /* parent height - margin-top */
+}
+.blt-outer-circle {
+  width: 100%;  /* width calculates to 30px */
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(3,169,244, .4);
+  padding-top: 7.5px;
+  padding-left: 25%;   /* calculates to 7.5px */
+  position: absolute;
+}
+.blt-inner-circle {
+  width: 66%;   /* width calculates to 15px */
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(3,169,244);
+}
+.blt-outer-circle:nth-child(2) {
+  top: 0;
+}
+.blt-outer-circle:nth-child(3) {
+  top: 74px;
+}
+.blt-outer-circle:nth-child(4) {
+  top: 148px;
+}
+.work-type {
+  float: left;
+  width: 90.55%;
+}
+.work-type div {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.work-type h4 {
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+.work-type time {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+    /***** Progress Bar *****/
+.progress-circle {
+  width: 13.24%;  /* width calculates to 70px */
+  height: 70px;
+  padding: 0;
+  margin: 15px 0;
+  margin-right: 8.45%; /*  calculates to 15px */
+  line-height: 5em;
+}
+.progress-circle:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  COVER-LETTER PAGE
+  ========================================
+*/
+
+.cl-header {
+  box-shadow: 0 5px 5px #bbb;
+}
+#letter {
+  background: #fff;
+  color: black;
+  padding: 0;
+  overflow: hidden;
+}
+#handler, #main-letter {
+  padding-bottom: 1000em;
+  margin-bottom: -1000em;
+}
+#handler {
+  padding-left: 6%;
+  padding-right: 3.6%;
+  background: #f4f4f4;
+}
+#main-letter {
+  padding-left: 3.6%;
+  padding-right: 6%;
+  padding-top: 30px;
+  box-shadow: -5px 0 10px rgba(158,158,158,.4);
+}
+
+    /* ========== Handler section ========== */
+.cl-handler {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.cl-handler:first-child {
+  margin-top:0;
+}
+.cl-handler:last-child {
+  margin-bottom: 30px;
+}
+
+.cl-handler > h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: rgba(3,169,244, .8);
+}
+
+    /* ========== Letter section ========== */
+#main-letter p {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+#main-letter img {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#main-letter div:last-child {
+  margin-bottom: 75px;
+}
+
+/*
+  ========================================
+  PORTFOLIO PAGE
+  ========================================
+*/
+
+#portfolio > .row {
+  background: #fff;
+  color: black;
+  padding: 0;
+  line-height: 18px;
+  height: 260px;
+}
+#portfolio .col-5:first-child{
+  padding-left: 6%;
+  padding-right: 3.6%;
+  box-shadow: 5px -1px 10px rgba(58,58,58,.8);
+  z-index: 1;
+}
+#portfolio .col-5:last-child{
+  padding-left: 3.6%;
+  padding-right: 6%;
+}
+#portfolio h3 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(3,169,244, .8);
+}
+#portfolio p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#portfolio .col-5 a {
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(3,169,244, .8);
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+#portfolio .col-7 {
+  height: 100%;
+}
+#project_post_it .col-7 {
+  background: url(../images/background/Dark-Blue.jpg) no-repeat center / cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+}
+#project_todo_list .col-7 {
+  background: url(../images/background/ligth-blue.jpg) no-repeat center / cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+}
+#project_tic_tac_toe .col-7 {
+  background: url(../images/background/City_Landscape.jpg) no-repeat center / cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+}
+#project_forensics .col-7 {
+  background: url(../images/background/Alien_Ink.jpg) no-repeat center / cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+}
+
+
+/*
+  ========================================
+
+  ========================================
+*/
+@media all and (min-width: 1024px) {
+  .row {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  body {
+    background: #424242;
+  }
+  nav, footer div:last-child {
+    background: #2196F3;
+  }
+}

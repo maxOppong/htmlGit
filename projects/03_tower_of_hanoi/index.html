@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<meta charset="UTF=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tower Of Hanoi</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Latest compiled and minified jQuery, Popper & JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+
+	<style media="screen">
+
+	</style>
+</head>
+
+<body>
+
+	<!-- Main Section -->
+	<div id="main" class="container-fluid">
+		<div class="row">
+			<section id="preferences" class="col-md-3">
+				<h2 class="head">Initial Peg</h2>
+				<div class="btn-group" role="group" aria-label="pegs">
+					<button type="button" class="btn btn-outline-light btn-sm" onclick="setInitialPeg(1);" value="1">One</button>
+					<button type="button" class="btn btn-outline-light btn-sm" onclick="setInitialPeg(2);" value="2">Two</button>
+					<button type="button" class="btn btn-outline-light btn-sm" onclick="setInitialPeg(3);" value="3">Three</button>
+				</div>
+
+				<h2 class='head'>Final Peg</h2>
+				<div id="finalPeg"></div>
+
+				<h2 class="head">Number of Discs</h2>
+				<div id="discsForm" class="hide">
+					<form class="form-group">
+						<select id="numOfDiscs" class="form-control">;
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+							<option value="4" selected>Four</option>
+							<option value="5">Five</option>
+							<option value="6">Six</option>
+							<option value="7">Seven</option>
+							<option value="8" >Eight</option>
+							<option value="9">Nine</option>
+							<option value="10">Ten</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="w-100" id="begin">
+					<button type="button" class="btn btn-primary btn-100" onclick="begin()">Begin</button>
+				</div>
+
+				<div class="w-100 hide" id="replay">
+					<button type="button" class="btn btn-primary btn-100" onclick="location.reload()">Again</button>
+				</div>
+
+			</section>
+			<section id="tower_of_hanoi" class="col-md-9">
+				<div id="errors" class="alert alert-danger hide" role="alert">
+					<ul>
+
+					</ul>
+					<button type="button" class="btn btn-link" onclick="location.reload()"> Try Again </button>
+				</div>
+				<div id="pause-play" class="hide">
+					<button type="button" class="btn btn btn-outline-danger btn-sm" onclick="changeState(false);">Pause</button>
+					<button type="button" class="btn btn btn-outline-primary btn-sm" onclick="changeState(true);">Resume</button>
+				</div>
+				<canvas id="canvas">
+					<p>Sorry, your browser doesn't user the canvas feature</p>
+				</canvas>
+			</section>
+		</div>
+	</div>
+
+	<!-- Main JS -->
+	<script type="text/javascript" src="assets/scripts/variables.js"></script>
+	<script type="text/javascript" src="assets/scripts/functions.js"></script>
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+
+</body>
+
+</html>
